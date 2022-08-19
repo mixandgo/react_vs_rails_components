@@ -11,3 +11,17 @@
 }
 
 */
+
+.animate-flash-increase {
+  animation: flash-yellow 0.5s ease-in-out;
+}
+
+@keyframes flash-yellow {
+  from {
+    background-color: #FFCE48;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
