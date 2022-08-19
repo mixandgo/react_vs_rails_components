@@ -1,4 +1,8 @@
-<div>
-  <h1 class="font-bold text-4xl">Site#index</h1>
-  <p>Find me in app/views/site/index.html.erb</p>
+<div id="new-user-form">
+  <%= new_user_form %>
+</div>
+
+<div id="users" class="prose px-4 py-2">
+  <h2>Users list</h2>
+  <%= users(@users) %>
 </div>

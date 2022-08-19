@@ -1,0 +1,11 @@
+<%= turbo_stream.update "flash" do %>
+  <%= flash_alert %>
+<% end %>
+
+<%= turbo_stream.update "new-user-form" do %>
+  <%= new_user_form(status: :success) %>
+<% end %>
+
+<%= turbo_stream.append "users" do %>
+  <%= user_details @user %>
+<% end %>
