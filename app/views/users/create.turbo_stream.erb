@@ -3,9 +3,9 @@
 <% end %>
 
 <%= turbo_stream.update "new-user-form" do %>
-  <%= new_user_form(status: :success) %>
+  <%= new_user_form %>
 <% end %>
 
 <%= turbo_stream.append "users" do %>
-  <%= user_details @user %>
+  <%= user_details(@user) %>
 <% end %>
